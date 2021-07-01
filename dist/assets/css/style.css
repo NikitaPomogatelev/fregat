@@ -417,7 +417,7 @@ input[type=number] {
 
 @media (max-width: 768px) {
   .modal {
-    padding: 50px 5px;
+    padding: 50px 4%;
   }
 }
 
