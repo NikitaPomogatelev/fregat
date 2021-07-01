@@ -481,7 +481,7 @@ input[type=number] {
 .modal__label {
   display: inline-block;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .modal__label span {
@@ -536,7 +536,9 @@ input[type=number] {
 
 @media (max-width: 1596px) {
   .header__nav {
-    display: none;
+    height: 0;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out;
   }
 }
 
@@ -673,25 +675,20 @@ input[type=number] {
   flex-wrap: wrap;
 }
 
+@media (max-width: 1596px) {
+  .nav__list {
+    padding-top: 100px;
+    padding-left: 20px;
+    flex-direction: column;
+    max-width: 285px;
+  }
+}
+
 .nav__link {
   font-family: 'Gilroy-Medium', sans-serif;
   font-size: 20px;
   line-height: 24px;
   transition: opacity .3s ease-in-out;
-}
-
-.nav__link::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: -23px;
-  display: inline-block;
-  width: 10px;
-  height: 8px;
-  background-image: url("../../assets/img/sprite.svg#shape-down");
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateY(-50%);
 }
 
 .nav__link:focus {
@@ -746,6 +743,32 @@ input[type=number] {
   }
 }
 
+@media (max-width: 1596px) {
+  .nav__list {
+    color: #fff;
+  }
+  .header__nav.header__nav--active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    width: 50%;
+    height: 100vh;
+    z-index: 99;
+    background-color: #468ACC;
+    color: #121212;
+  }
+  .nav__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+  }
+}
+
 .social {
   display: flex;
 }
@@ -792,11 +815,12 @@ input[type=number] {
   }
 }
 
-.breadcrumb .nav__link {
+.nav__item.breadcrumb .nav__link {
   padding-right: 23px;
+  color: #fff;
 }
 
-.breadcrumb .nav__link::after {
+.nav__item.breadcrumb .nav__link::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -810,7 +834,13 @@ input[type=number] {
   transform: translateY(-50%);
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 1596px) {
+  .nav__item.breadcrumb .nav__link::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1596px) {
   .nav__item:hover .nav__item-menu {
     overflow: visible;
     opacity: 1;
@@ -829,6 +859,7 @@ input[type=number] {
   background-color: transparent;
   cursor: pointer;
   color: #fff;
+  z-index: 999;
 }
 
 .burger::before, .burger::after {

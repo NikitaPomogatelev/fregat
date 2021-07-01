@@ -23026,6 +23026,8 @@ __webpack_require__.r(__webpack_exports__);
 var modal = function modal() {
   var btnForm = document.querySelectorAll('.btn-form');
   var modal = document.querySelector('#modal');
+  var modalTitle = modal.querySelector('.modal__title');
+  var modalBtn = modal.querySelector('.modal__btn');
 
   var escapeHandler = function escapeHandler(e) {
     if (e.code === 'Escape') {
@@ -23044,7 +23046,12 @@ var modal = function modal() {
   };
 
   btnForm.forEach(function (btn) {
-    btn.addEventListener('click', openModal);
+    btn.addEventListener('click', function () {
+      var btnText = btn.textContent;
+      modalTitle.textContent = btnText;
+      modalBtn.textContent = btnText;
+      openModal();
+    });
   });
   modal.addEventListener('click', function (e) {
     var target = e.target;
@@ -23053,12 +23060,35 @@ var modal = function modal() {
       closeModal();
     }
   });
+
+  function disableScroll() {
+    var pagePosition = window.scrollY;
+    document.body.classList.add('disable-scroll');
+    document.body.dataset.position = pagePosition;
+    document.body.style.top = -pagePosition + 'px';
+  }
+
+  function enableScroll() {
+    var pagePosition = parseInt(document.body.dataset.position, 10);
+    document.body.style.top = 'auto';
+    document.body.classList.remove('disable-scroll');
+    window.scroll({
+      top: pagePosition,
+      left: 0
+    });
+    document.body.removeAttribute('data-position');
+  }
+
   var burger = document.querySelector('.burger');
   var headerNav = document.querySelector('.header__nav');
   burger.addEventListener('click', function () {
-    if (!burger.classList.contains('burger--active')) {
-      burger.classList.add('burger--active');
-      headerNav.style.display = 'block';
+    burger.classList.toggle('burger--active');
+    headerNav.classList.toggle('header__nav--active');
+
+    if (burger.classList.contains('burger--active')) {
+      disableScroll();
+    } else {
+      enableScroll();
     }
   });
 };
