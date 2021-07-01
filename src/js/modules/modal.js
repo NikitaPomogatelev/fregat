@@ -15,7 +15,6 @@ const modal = () => {
     }
     const closeModal = () => {
         modal.classList.remove('show');
-
         document.removeEventListener('keydown', escapeHandler);
     }
 

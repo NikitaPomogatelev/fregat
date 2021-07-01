@@ -6,6 +6,7 @@ import gallery from './modules/fslightbox';
 import feedbackSlider from './modules/feedbackSlider';
 import breadcrumbsFocus from './modules/breadcrumbsFocus';
 import modal from './modules/modal';
+import validate from './modules/validate';
 
 window.addEventListener('DOMContentLoaded', () => {
     modal();
@@ -16,4 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
     gallery();
     feedbackSlider();
     breadcrumbsFocus();
+    validate();
 })

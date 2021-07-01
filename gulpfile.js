@@ -48,7 +48,15 @@ const copyHtml = () => {
 const copyImg = () => {
     return src('./src/assets/img/*.{jpg,jpeg,webp,svg,png,ico,webmanifest,xml}')
     .pipe(dest(dist + 'assets/img'))
-    
+}
+
+const copyWebp = () => {
+    return src('./src/assets/img/webp/*.webp')
+    .pipe(dest(dist + 'assets/img/webp'))
+}
+const copyFavicons = () => {
+    return src('./src/assets/img/favicons/*.{svg,png,ico,webmanifest,xml}')
+    .pipe(dest(dist + 'assets/img/favicons'))
 }
 
 
@@ -130,6 +138,8 @@ const watchFiles = () => {
 
     watch('./src/assets/sass/**/*.{sass, scss}', styles);
     watch('./src/**/*.html', copyHtml);
+    watch('./src/assets/img/webp/*.webp', copyWebp);
+    watch('./src/assets/img/favicons/*.{svg,png,ico,webmanifest,xml}', copyFavicons);
     watch('./src/assets/img/**/*.{jpg,jpeg,png,ico,webmanifest,xml}', copyImg);
     watch('./src/assets/fonts/**/*.*', copyFonts);
     watch('./src/assets/img/svg/*.svg', svgSprites);
@@ -145,7 +155,7 @@ exports.copyImg = copyImg;
 
 
 
-exports.default = series(clean, parallel(copyHtml, scripts, copyImg, copyFonts, resources, svgSprites), styles, watchFiles);
+exports.default = series(clean, parallel(copyHtml, scripts, copyImg, copyWebp, copyFavicons, copyFonts, resources, svgSprites), styles, watchFiles);
 
 const stylesBuild = () => {
     return src(['./src/assets/sass/**/*.sass', './src/assets/sass/**/*.scss'])
@@ -161,6 +171,11 @@ const stylesBuild = () => {
     .pipe(dest(dist + './assets/css/'))
     .pipe(browserSync.stream());
 
+}
+
+const copySvgForBuild = () => {
+    return src('./src/assets/img/*.svg')
+    .pipe(dest(dist + 'assets/img'))
 }
 
 const tinypng = () => {
@@ -229,6 +244,6 @@ const minSvgSprites = () => {
 
 exports.minSvgSprites = minSvgSprites;
 
-exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, resources, minSvgSprites), stylesBuild, tinypng);
+exports.build = series(clean, parallel(copyHtml, copyFonts, scriptsBuild, copyWebp, copyFavicons, resources, minSvgSprites), stylesBuild, tinypng, copySvgForBuild);
 
 

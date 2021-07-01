@@ -40,6 +40,8 @@
   "dependencies": {
     "choices.js": "^9.0.1",
     "fslightbox": "^3.3.0-2",
+    "inputmask": "^5.0.6",
+    "just-validate": "^1.5.0",
     "normalize.css": "^8.0.1",
     "swiper": "^6.7.1",
     "vanillajs-datepicker": "^1.1.4"
