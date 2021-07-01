@@ -145,17 +145,6 @@ input[type=number] {
   margin: 0 auto;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .btn {
   padding: 20px;
   font-family: 'Gilroy-Semibold', sans-serif;
@@ -677,10 +666,16 @@ input[type=number] {
 
 @media (max-width: 1596px) {
   .nav__list {
-    padding-top: 100px;
-    padding-left: 20px;
+    padding-top: 120px;
+    padding-left: 30px;
     flex-direction: column;
     max-width: 285px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav__list {
+    padding-top: 80px;
   }
 }
 
@@ -758,6 +753,15 @@ input[type=number] {
     background-color: #468ACC;
     color: #121212;
   }
+}
+
+@media (max-width: 1596px) and (max-width: 768px) {
+  .header__nav.header__nav--active {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1596px) {
   .nav__item {
     margin-bottom: 10px;
   }

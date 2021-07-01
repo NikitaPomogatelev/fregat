@@ -106,10 +106,12 @@
         justify-content: space-between
         flex-wrap: wrap
         @media (max-width: 1596px)
-            padding-top: 100px
-            padding-left: 20px
+            padding-top: 120px
+            padding-left: 30px
             flex-direction: column
             max-width: 285px
+        +tablet
+            padding-top: 80px
     &__link
         +gilroy-medium
         font-size: 20px
@@ -165,7 +167,9 @@
         height: 100vh
         z-index: 99
         background-color: #468ACC
-        color: $dark 
+        color: $dark
+        +mobile
+            width: 60%
     .nav__item
         margin-bottom: 10px 
 +mobile
