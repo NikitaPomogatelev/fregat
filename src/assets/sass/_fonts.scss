@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Gilroy-Light';
+    src:    local('Gilroy Light'), local('Gilroy-Light'),
+        url('../fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('../fonts/Gilroy/GGilroy-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src:    local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src:    local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src:    local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Book-Antiqua';
+    src:    local('Book Antiqua'), local('Book-Antiqua'),
+        url('../fonts/Book-Antiqua.woff2') format('woff2'),
+        url('../fonts/Book-Antiqua.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller-Regular';
+    src:    local('Muller Regular'), local('Muller-Regular'),
+    url('../fonts/Muller/Muller-Regular.woff2') format('woff2'),
+    url('../fonts/Muller/Muller-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muller-Medium';
+    src:    local('Muller Medium'), local('Muller-Medium'),
+    url('../fonts/Muller/Muller-Medium.woff2') format('woff2'),
+        url('../fonts/Muller/Muller-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src:    local('Oswald Bold'), local('Oswald-Bold'),
+        url('../fonts/Oswald-Bold.woff2') format('woff2'),
+        url('../fonts/Oswald-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin gilroy-light {
+    font-family: 'Gilroy-Light', sans-serif;
+}
+@mixin gilroy-regular {
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+@mixin gilroy-medium {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+@mixin gilroy-semibold {
+    font-family: 'Gilroy-Semibold', sans-serif;
+}
+@mixin book-antiqua {
+    font-family: 'Book-Antiqua', sans-serif;
+}
+@mixin muller-regular {
+    font-family: 'Muller-Regular', sans-serif;
+}
+@mixin muller-medium {
+    font-family: 'Muller-Medium', sans-serif;
+}
+@mixin oswald-bold {
+    font-family: 'Oswald-Bold', sans-serif;
+}
+
+
+
+
+// 100: Thin;
+// 200: Extra Light (Ultra Light);
+// 300: Light;
+// 400: Normal;
+// 500: Medium;
+// 600: Semi Bold (Demi Bold);
+// 700: Bold;
+// 800: Extra Bold (Ultra Bold);
+// 900: Black (Heavy).

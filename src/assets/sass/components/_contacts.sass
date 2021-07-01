@@ -1,0 +1,208 @@
+.contacts
+    padding: 200px 0 200px
+    +tablet
+        padding: 100px 0 100px
+    +mobile
+        padding: 55px 0 75px
+    &__nav
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+        +mobile
+            flex-direction: column
+    &__nav-link
+        position: relative
+        +gilroy-semibold
+        font-size: 25px
+        line-height: 1.23
+        color: $accent
+        transition: opacity .3s ease-in-out
+        &:not(:last-of-type)
+            margin-right: 20px
+            +mobile
+                margin-right: 0
+                margin-bottom: 10px
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 2px
+            background-color: currentColor
+        &:active
+            opacity: 0.7
+        &:focus
+            opacity: 0.7
+        +desktop
+            &:hover
+                opacity: 0.7
+        +tablet
+            font-size: 20px
+        +mobile
+  
+            font-size: 18px
+
+    &-content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +tablet
+            flex-direction: column
+            
+    &__map
+        width: 55%
+        margin-right: 20px
+        +tablet
+            width: 100%
+            margin-right: 0
+            margin-bottom: 30px
+        picture,
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__text
+        width: 40%
+        +tablet
+            width: 100%
+    &__list
+        margin-bottom: 60px
+        @media (max-width: 1444px)
+            margin-bottom: 40px
+        +tablet
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            
+    &__item
+        position: relative
+        padding-left: 50px
+        +tablet
+            width: 50%
+        +mobile
+            width: 100%
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 27px
+            height: 27px
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+        &:not(:last-of-type)
+            margin-bottom: 40px
+            @media (max-width: 1444px)
+                margin-bottom: 20px
+        &:nth-of-type(1)
+            &::before
+                background-image: url('../../assets/img/sprite.svg#phone')             
+        &:nth-of-type(2)
+            &::before
+                background-image: url('../../assets/img/sprite.svg#mail')             
+        &:nth-of-type(3)
+            &::before
+                background-image: url('../../assets/img/sprite.svg#map')             
+        &:nth-of-type(4)
+            &::before
+                background-image: url('../../assets/img/sprite.svg#compass')
+                opacity: 0.7             
+    &__item-phones
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        max-width: 380px
+        .contacts__link
+            width: 50%
+            &:not(:last-of-type)
+                margin-bottom: 5px
+            +tablet
+                width: 100%
+
+            
+    &__title
+        +gilroy-medium
+        font-size: 35px
+        margin-bottom: 50px
+        color: $dark
+        @media (max-width: 1444px)
+            font-size: 30px
+        +mobile
+            font-size: 26px
+            margin-bottom: 35px
+            
+    &__subtitle
+        margin-bottom: 12px
+        +gilroy-regular
+        font-size: 25px
+        line-height: 1.1
+        color: #959699
+        @media (max-width: 1444px)
+            font-size: 20px
+    &__link,
+    &__descr
+        +gilroy-semibold
+        font-size: 20px
+        line-height: 1.2
+        color: $dark
+        +tablet
+            font-size: 16px
+    &__link
+        transition: color .3s ease-in-out
+        &:active
+            color: $accent
+        &:focus
+            color: $accent
+        +desktop
+            &:hover
+                color: $accent
+    &__question-title
+        margin-bottom: 30px
+        +muller-regular
+        font-size: 35px
+        line-height: 1
+        color: $dark
+        @media (max-width: 1444px)
+            margin-bottom: 15px
+            font-size: 20px
+        +tablet
+            font-size: 18px
+    &__question-descr
+        display: flex
+        align-items: center
+    &__question-write
+        margin-right: 20px
+        +muller-medium
+        font-size: 20px
+        text-decoration: none!important
+        // line-height: 1.6
+        @media (max-width: 1444px)
+            font-size: 16px
+    &-social__link
+        display: flex
+        align-items: center
+        span
+            +gilroy-medium
+            font-size: 20px
+            text-decoration: underline
+            color: $dark
+            @media (max-width: 1444px)
+                    font-size: 16px
+    &-social__link-icon
+        margin-right: 9px
+        width: 20px
+        height: 20px
+        &--whatsapp
+            color: #00db3d
+        svg
+            display: block
+            width: 20px
+            height: 20px
+            margin-right: 9px
+            fill: currentColor
+            object-fit: cover
+            
+
+

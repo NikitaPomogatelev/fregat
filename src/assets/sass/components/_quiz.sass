@@ -1,0 +1,256 @@
+.quiz
+    padding: 100px 0
+    background-image: url('../../assets/img/quiz-bg.jpg')
+    +tablet
+        padding: 65px 0
+    &-steps
+        margin-bottom: 90px
+        +tablet
+            margin-bottom: 45px
+        
+    &-steps__list
+        display: flex
+        @media (max-width: 539px)
+            flex-direction: column
+            
+    &-steps__item
+        display: flex
+        align-items: center
+        +gilroy-semibold
+        &:not(:last-of-type)
+            position: relative
+            padding-right: 70px
+            @media (max-width: 539px)
+                margin-bottom: 10px
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                right: 6%
+                transform: translateY(-50%)
+                display: inline-block
+                width: 38px
+                height: 2px
+                border-top: 2px dashed $accent
+                z-index: 15
+                +tablet
+                    width: 30px
+                @media (max-width: 539px)
+                    display: none
+                
+            +tablet
+                padding-right: 55px
+    &-steps__item--active
+        color: $accent
+            
+            
+    &-steps__number
+        font-size: 20px
+        border: 2px solid $accent
+        border-radius: 100%
+        width: 33px
+        min-height: 33px
+        margin-right: 10px
+        display: flex
+        align-items: center
+        justify-content: center
+        +tablet
+            width: 28px
+            min-height: 28px
+            font-size: 16px
+    &-steps__descr
+        font-size: 25px
+        +tablet
+            font-size: 16px
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__form-inner
+        margin-right: 10px
+        width: calc(65% - 10px)
+        +tablet
+            width: 100%
+    &__subtitle
+        margin-bottom: 50px
+        +book-antiqua
+        font-weight: 400
+        font-size: 65px
+        line-height: 1.1
+        +tablet
+            font-size: 45px
+        +mobile
+            font-size: 38px
+    &-row
+        display: flex
+        flex-wrap: wrap
+        @media (max-width: 1376px)
+            flex-direction: column
+        
+            
+    &__col
+        &:first-of-type
+            margin-right: 20px
+            @media (max-width: 1376px)
+                margin-right: 0
+        &:last-of-type
+            flex-grow: 1
+    &__form-item
+        margin-bottom: 20px
+        +mobile
+            margin-bottom: 15px
+        .choices__inner
+            background-color: transparent
+            +muller-regular
+            font-size: 18px
+            height: 64px
+            line-height: 1.1
+            border: 1px solid #505050
+            padding: 0
+            +mobile
+                font-size: 14px
+        .choices__list--single 
+            padding: 23px 54px
+            +mobile
+                padding: 25px 35px
+        .choices .choices__inner
+            padding: 0
+        .choices::after
+            border: none
+            margin-top: 0
+            transform: translateY(-50%)
+            transition: transform .3s ease
+            width: 15px
+            height: 10px
+            background-image: url('../../assets/img/sprite.svg#down-arrow')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+        .choices::before
+            content: ''
+            position: absolute
+            left: 24px
+            top: 50%
+            display: inline-block
+            width: 16px
+            height: 16px
+            transform: translateY(-50%)
+            background-image: url('../../assets/img/sprite.svg#house')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            +mobile
+                left: 12px
+        .choices.is-open::after
+            margin-top: 0
+            transform: translateY(-50%) rotate(180deg)
+
+    &__form-label
+        display: block
+        margin-bottom: 15px
+        +muller-medium
+        font-size: 25px
+        +mobile
+            font-size: 22px
+    &__form-input
+        width: 100%
+        height: 64px
+    &__form-user
+        position: relative
+        input
+            padding-left: 54px
+
+        &::before
+            content: ''
+            position: absolute
+            left: 24px
+            top: 68%
+            display: inline-block
+            width: 16px
+            height: 16px
+            transform: translateY(-50%)
+            background-image: url('../../assets/img/sprite.svg#user-2')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+    &__form-message
+        resize: none
+        height: 185px
+    &__item
+        +tablet
+            display: none
+    &__range-date
+        display: flex
+        flex-wrap: wrap
+        
+    &__btn
+        padding: 26px 157px
+        +tablet
+            display: block
+            margin: 0 auto
+        +mobile
+            padding: 26px 44px
+            width: 100%
+    
+        
+      
+.range-date
+    &__item
+        &:not(:last-of-type)
+            margin-right: 20px
+        label
+            display: block
+    &__start
+        +mobile
+            margin-bottom: 15px
+.range-date__item-wrapper
+    position: relative
+    input
+        position: relative
+        padding: 21px 
+        height: 64px
+        padding-left: 45px
+        padding-right: 0
+        background: transparent
+        font-size: 18px
+        border: 1px solid #505050
+        cursor: pointer
+    &::before
+        content: ''
+        position: absolute
+        left: 20px
+        top: 50%
+        transform: translateY(-50%)
+        display: inline-block
+        width: 21px
+        height: 21px
+        background-image: url('../../assets/img/sprite.svg#calendar')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &::after
+        content: ''
+        position: absolute
+        right: 9%
+        top: 50%
+        transform: translateY(-50%)
+        display: inline-block
+        width: 15px
+        height: 11px
+        background-image: url('../../assets/img/sprite.svg#down-arrow')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    
+
+.datepicker-picker
+    +gilroy-medium
+            
+    &__start
+        position: relative
+        
+
+                
+            
+                
+            

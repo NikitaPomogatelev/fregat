@@ -1,0 +1,214 @@
+@import 'mixins/breakpoint'
+.btn
+    padding: 20px
+    +gilroy-semibold
+    text-transform: uppercase
+    &--accent
+        color: $white
+        background-color: $blue
+        transition: background-color .3s ease-in-out
+        &:focus
+            background-color: lighten($blue, 10%)
+        &:active
+            background-color: lighten($blue, 10%)
+        +desktop
+            &:hover
+                background-color: lighten($blue, 10%)
+    &--primary
+        background-color: $white
+        color: $accent
+        border: 2px solid $accent
+        transition: color .3s ease-in-out, background-color .3s ease-in-out
+        &:focus
+            color: $white
+            background-color: $accent
+        &:active
+            color: $white
+            background-color: $accent
+        +desktop
+            &:hover
+                color: $white
+                background-color: $accent
+
+.title
+    text-align: center
+    +book-antiqua
+    font-weight: 400
+    font-size: 65px
+    line-height: 1.1
+    color: $accent
+    +tablet
+        font-size: 32px
+
+.input
+    background: transparent
+    padding: 23px 34px
+    +muller-regular
+    width: 100%
+    font-size: 18px
+    border: 1px solid #505050
+    &::placeholder
+        +muller-regular
+        color: $dark
+        +mobile
+            font-size: 14px
+    &:focus
+        outline: 1px solid $dark
+
+
+
+
+.slider-button-prev,
+.slider-button-next
+    position: relative
+    width: 30px
+    height: 30px
+    background-color: transparent
+    color: $dark
+    z-index: 10
+    cursor: pointer
+    transition: color .2s ease-in-out
+    +mobile
+        display: none
+    .slider-button-arrow-prev,
+    .slider-button-arrow-next
+        position: absolute
+        top: 50%
+        left: 50%
+        display: inline-block
+        width: 25px
+        height: 25px
+        border-top: 5px solid currentColor
+        border-right: 5px solid currentColor
+        border-radius: 5px
+        transform: translate(-50%, -50%)
+    .slider-button-arrow-prev
+        // left: -30%
+        transform: translate(-30%, -50%) rotate(-135deg)
+    .slider-button-arrow-next
+        transform: translate(-80%, -50%) rotate(45deg)
+    &:focus
+        color: $accent
+    &:active
+        color: $accent
+    +desktop
+        &:hover
+            color: $accent
+
+.slider-controls
+    display: flex
+    align-items: center
+    justify-content: center     
+    .slider-pagination
+        display: flex 
+        align-items: center
+        justify-content: center 
+        margin-right: 80px
+        font-size: 30px
+        line-height: 1.1
+        +muller-regular
+        +mobile
+            font-size: 20px
+            margin-right: 0
+        &__current
+            min-width: 38.5px
+            margin-right: 20px
+            text-align: center
+            +mobile
+                margin-right: 10px
+        &__total
+            min-width: 38.5px
+            margin-left: 20px
+            text-align: center
+            +mobile
+                margin-left: 10px
+        .swiper-pagination
+            position: relative
+            left: auto
+            width: 200px
+            height: 2px
+            +mobile
+                width: 130px
+        .swiper-pagination-progressbar
+            background: #dfe1e4
+        .swiper-pagination-progressbar .swiper-pagination-progressbar-fill
+            background: $dark
+    .slider-navigate
+        display: flex
+
+.overlay 
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    opacity: 0
+    z-index: -1
+    overflow: hidden
+    background-color: rgba(0,0,0,0.3)
+    transition: opacity .3s ease-in-out
+
+.overlay.show
+    opacity: 1
+    cursor: pointer
+    overflow: visible
+    z-index: 20
+
+.modal 
+    position: relative
+    min-width: 320px
+    padding: 50px 80px
+    background-color: $white
+    cursor: auto
+    +mobile
+        padding: 50px 5px
+    &-close
+        position: absolute
+        top: 20px
+        right: 20px
+        width: 24px
+        height: 24px
+        background-image: url('../../assets/img/sprite.svg#cross')
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+        transition: opacity .3s ease-in-out
+        &:focus
+            opacity: 0.7
+        &:active
+            opacity: 0.7
+        +desktop
+            &:hover
+                opacity: 0.7
+        
+    &-content   
+        max-width: 434px
+    &__title
+        text-align: center
+        +book-antiqua
+        font-size: 57px
+        line-height: 1.2
+        margin-bottom: 40px
+        +mobile
+            margin-bottom: 20px
+            font-size: 30px
+    &__label
+        display: inline-block
+        width: 100%
+        margin-bottom: 40px
+        span
+            display: inline-block
+            margin-bottom: 10px
+            +muller-regular
+            font-weight: 300
+            color: #aeaeae
+    &__btn
+        width: 100%
+    &__link
+        color: $accent
+        text-decoration: underline
+
+

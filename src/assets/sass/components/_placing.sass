@@ -1,0 +1,190 @@
+.placing
+    padding: 100px 0
+    +tablet
+        padding: 55px 0
+    +mobile
+        padding: 25px 0 40px
+    &__title
+        margin-bottom: 48px
+    &__tabs
+        margin-bottom: 52px
+        text-align: center
+        +mobile
+            display: flex
+            flex-direction: column
+    &__btn
+        padding: 15px 50px
+        +gilroy-regular
+        font-size: 25px
+        text-transform: none
+        line-height: 1.24
+        
+        &:last-of-type
+            margin-top: 10px
+        &:not(:last-of-type)
+            margin-right: 15px
+            +mobile
+                margin-right: 0
+        &--active
+            background-color: $accent
+            color: $white
+            +gilroy-semibold
+        +tablet
+            font-size: 20px
+            padding: 12px 24px
+        +mobile
+            padding: 12px 10px
+    &-slider
+        margin-bottom: 80px
+        +tablet
+            margin-bottom: 40px
+    &-button-prev
+        margin-right: 20px
+    &-button-prev,
+    &-button-next
+        +mobile
+            display: none
+        
+    &-row
+        +mobile
+            flex-direction: column
+
+
+
+        
+.card
+    max-width: 493px
+    margin: 0 auto
+    padding: 15px
+    background: $white
+    box-shadow: 4px 4px 22px rgba(94, 177, 255, 0.05)
+    +mobile
+        padding: 0
+        
+    &__image
+        position: relative
+        max-width: 463px
+        max-height: 474px
+        margin-bottom: 55px
+        @media (max-width: 1125px)
+            margin-bottom: 27px
+    &__text
+        max-width: 400px
+        margin: 0 auto
+    &__info
+        
+        position: absolute
+        top: 0
+        right: 0
+        display: none
+        padding: 13px 40px
+        +gilroy-semibold
+        font-size: 20px
+        line-height: 1.1
+        color: $white
+        background-color: $sunglow
+    &__subtitle
+        +gilroy-medium
+        font-size: 25px
+        line-height: 1.2
+        color: $dark
+        margin-bottom: 10px
+        @media (max-width: 1125px)
+            font-size: 20px
+            
+    &__descr
+        max-width: 387px
+        margin-bottom: 30px
+        font-size: 16px
+        +gilroy-regular
+        font-weight: 300
+    &-row
+        display: flex
+        align-items: flex-start
+        margin-bottom: 58px
+    &-col
+        width: 50%
+        
+        &:first-of-type
+            position: relative
+            max-width: 185px
+            padding-right: 5px
+            width: 44%
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                right: 0
+                width: 1px
+                height: 100%
+                background: #dfe1e4
+                +mobile
+                    top: auto
+                    bottom: 0
+                    right: auto
+                    left: 0
+                    width: 100%
+                    height: 1px
+            +mobile  
+                width: 100%
+        &:last-of-type
+            padding-left: 25px
+            width: 55%
+            +mobile
+                width: 100%
+                padding-left: 0
+                margin-top: 5px
+        
+    
+    &__list
+        +mobile
+            margin-bottom: 10px
+    &__item
+        position: relative
+        padding-left: 20px
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            width: 12px
+            height: 12px
+            background-image: url('../../assets/img/sprite.svg#checkmark')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+    &__info-item
+        span
+            +gilroy-semibold
+
+    &-bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__btn
+        padding: 19px 54px
+        margin-right: 10px
+        @media (max-width: 1125px)
+            padding: 19px 30px
+    &__status
+        flex-shrink: 0
+        width: 50%
+        +gilroy-regular
+        font-size: 12px
+        span
+            display: flex
+            align-items: center
+            color: $success
+            svg
+                margin-right: 8px
+                width: 12px
+                height: 12px
+                fill: currentColor
+
+.card.card--info
+    .card__info
+        display: block
+
+
+

@@ -1,0 +1,85 @@
+html
+    box-sizing: border-box
+
+*, *::before, *::after
+    box-sizing: inherit
+
+body
+    margin: 0 
+    +gilroy-regular
+    font-size: 16px
+    line-height: 24px
+    background-color: $white
+
+
+a
+    text-decoration: none
+    color: inherit
+
+ul, li
+    margin: 0
+    padding: 0
+    list-style: none
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+p
+    margin: 0
+
+img
+    max-width: 100%
+
+svg
+    width: 100%
+    height: 100%
+
+input, button
+    border: none
+    outline: none
+    
+button
+    padding: 0
+    background-color: transparent
+    cursor: pointer
+    
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
+input[type=number] 
+  -moz-appearance: textfield
+
+.site-container
+    position: relative
+    overflow: hidden
+    
+.container 
+    margin: 0 auto
+    padding: 0 15px
+    max-width: 1550px
+
+.container-fluid
+    padding: 0 30px
+    max-width: 1864px
+    margin: 0 auto
+
+.visually-hidden
+    position: absolute
+    width: 1px
+    height: 1px
+    margin: -1px
+    padding: 0
+    overflow: hidden
+    border: 0
+    clip: rect(0 0 0 0)
+
+    
+    
+
+
+
+
+
+

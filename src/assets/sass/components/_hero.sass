@@ -1,0 +1,233 @@
+.hero
+    position: relative
+    height: 100vh
+    min-height: 640px
+    width: 100%
+    background-color: $white
+    color: $white
+
+    .swiper-container
+        width: 100%
+        height: 100%
+    &__slide
+        width: 100%
+        height: 100%
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    &__container
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 100%
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media ( max-width: 1654px )
+            margin-bottom: 90px
+        +tablet
+            flex-direction: column
+            margin-bottom: 10px
+        +mobile
+            margin-bottom: 30px
+            
+    &__left
+        margin-right: 20px
+        @media ( max-width: 1654px )
+            width: 53%
+        +tablet
+            margin-right: 0
+            width: 100%
+            align-self: flex-start
+            
+    &__heading
+        +book-antiqua
+        margin-bottom: 70px   
+        strong
+            display: inline-block
+            font-size: 240px
+            font-weight: 400
+            margin-bottom: 35px
+            line-height: 1
+            @media ( max-width: 1654px )
+                font-size: 126px
+            +mobile
+                margin-bottom: 10px
+                font-size: 75px
+        small
+            display: block
+            +gilroy-semibold
+            font-size: 30px
+            +mobile
+                font-size: 16px
+    &__heading--second
+        strong
+            font-size: 106px
+            @media ( max-width: 1654px )
+                font-size: 76px
+            +mobile
+                font-size: 46px
+    &__btn
+        padding: 26px 94px
+        max-width: 378px
+        +mobile
+            padding: 26px 42px
+    &__text-comment
+        width: 37%
+        position: relative
+        max-width: 600px
+        padding-left: 50px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            display: inline-block
+            height: 80%
+            width: 3px
+            background-color: rgba($white, 0.6)
+        +tablet
+            width: 100%
+            align-self: flex-end
+        +mobile
+            display: none
+
+
+    &__features
+        position: absolute
+        bottom: 0
+        left: 0
+        padding: 30px 0
+        width: 100%
+        background-color: rgba(0, 0, 0, 0.54)
+        z-index: 10
+        +mobile
+            display: none
+       
+    &__features-list
+        display: flex
+        justify-content: space-between
+        +mobile
+            flex-direction: column
+    &__features-link
+        display: flex
+        align-items: center
+        transition: opacity .3s ease-in-out
+        &:active
+            opacity: 0.7
+        &:focus
+            opacity: 0.7
+        +desktop
+            &:hover
+                opacity: 0.7
+    &__features-image
+        margin-right: 30px
+        max-width: 126px
+        max-height: 95px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        @media (max-width: 1213px)
+            max-width: 86px
+            max-height: 71px
+            margin-right: 20px
+            width: 45%
+        +tablet
+            display: none
+        +mobile
+            display: none
+            
+    &__features-text
+        span
+            +gilroy-light
+            position: relative
+            color: #bebebe
+            font-size: 14px
+            &::after
+                content: ''
+                position: absolute
+                top: 50%
+                right: -40px
+                display: inline-block
+                width: 23px
+                height: 6px
+                transform: translateY(-50%)
+                background-image: url('../../assets/img/sprite.svg#more-arrow')
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                @media (max-width: 1213px)
+                    right: -30px
+    &__features-title
+        margin-bottom: 10px
+        +gilroy-medium
+        font-weight: 500
+        font-size: 20px
+        @media (max-width: 1213px)
+            font-size: 16px
+    
+
+    
+    
+
+.hero-button-prev,
+.hero-button-next
+    position: absolute
+    top: 45%
+    width: 40px
+    height: 40px
+    color: $white
+    .slider-button-arrow-prev,
+    .slider-button-arrow-next
+        width: 30px
+        height: 30px
+    @media ( max-width: 1654px )
+        top: 57%
+    +mobile
+        display: none
+
+        
+
+.hero-button-prev
+    left: 1%
+    // transform: translate(-50%, -50%) rotate(-135deg)
+    +tablet
+        top: 54%
+.hero-button-next
+    right: 1%
+    // transform: translate(-50%, -50%) rotate(45deg)
+    +tablet
+        top: 39%
+.hero
+    .swiper-pagination-bullet
+        background: $white   
+    .swiper-pagination
+        display: none  
+        +mobile
+            display: block
+        
+        
+
+.text-comment
+    &__subtitle
+        margin-bottom: 12px
+        +gilroy-semibold
+        font-size: 20px
+    &__quote
+        display: inline-block
+        margin-bottom: 27px
+        +gilroy-regular
+        font-size: 16px
+        line-height: 24px
+        &::before,
+        &::after
+            display: none
+    &__author
+        display: flex
+        justify-content: flex-end
+        +gilroy-semibold
+        font-size: 20px
+        font-style: normal

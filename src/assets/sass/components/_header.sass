@@ -1,0 +1,223 @@
+@import '../mixins/breakpoint'
+@import '../mixins/burger'
+.header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    background-color: transparent
+    z-index: 10
+    padding: 46px 0
+    +mobile
+        padding: 23px 0
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: $white
+        +mobile
+            padding: 0 15px
+    
+    &__left
+        width: 42%
+    &__nav
+        @media (max-width: 1596px)
+            display: none
+            
+    &__logo
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        @media (max-width: 1278px)
+            max-width: 140px
+        +mobile 
+            max-width: 80px
+
+    &__right
+        width: 42%
+        display: flex
+        align-items: center
+        justify-content: space-around
+        @media ( max-width: 1278px)
+            justify-content: flex-end
+    &__phones
+        +gilroy-semibold
+        font-size: 20px
+        line-height: 30px
+        @media ( max-width: 1278px)
+            display: none
+            
+        
+    &__phone
+        padding-left: 30px
+        background-image: url('../../assets/img/phone.svg')
+        background-repeat: no-repeat
+        background-position: left center
+        transition: opacity .3s ease-in-out
+        &:not(:last-of-type)
+            margin-right: 25px
+            @media (max-width: 1668px)
+                display: block
+        &:focus
+            opacity: .3
+        &:active
+            opacity: .3
+        +desktop
+            &:hover
+                opacity: .7
+    &__btn
+        +gilroy-semibold
+        font-size: 16px
+        line-height: 20px
+        color: $white
+        text-decoration-line: underline
+        text-transform: uppercase
+        transition: opacity .3s ease-in-out
+        &:focus
+            opacity: .7
+        &:active
+            opacity: .3
+        +desktop
+            &:hover
+                opacity: .7
+        +mobile
+            display: none
+    &-social__item
+        max-height: 22px
+        &:not(:last-of-type)
+            margin-right: 12px
+
+    &__button
+        display: none
+        @media (max-width: 1596px)
+            +gilroy-semibold
+            display: flex
+            font-size: 26px
+        
+
+.nav
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__link
+        +gilroy-medium
+        font-size: 20px
+        line-height: 24px
+        transition: opacity .3s ease-in-out
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            right: -23px
+            display: inline-block
+            width: 10px
+            height: 8px
+            background-image: url('../../assets/img/sprite.svg#shape-down')
+            background-repeat: no-repeat
+            background-size: cover
+            transform: translateY(-50%)
+        &:focus
+            opacity: .7
+        
+        +desktop
+            &:hover
+                opacity: .7
+    &__item-menu
+        height: 0
+        opacity: 0
+        overflow: hidden
+        transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out
+
+    
+            
+
+.breadcrumb
+    position: relative
+    &-menu
+        position: absolute
+        top: 95%
+        left: -12px
+        min-width: 234px
+        &__list
+            padding: 10px 15px
+            background: rgba(0, 0, 0, 0.4)
+        &__link
+            display: inline-block
+            +gilroy-regular
+            font-size: 20px
+            line-height: 36px
+            color: $white
+            
+        &__item
+            position: relative
+            +desktop
+                &:hover
+                    opacity: 0.7
+                    transition: opacity 0.2s ease-in-out
+        
+           
+
+.social
+    display: flex
+    &__link
+        display: inline-block
+        width: 22px
+        height: 22px
+        transition: opacity .3s ease-in-out
+        color: $white
+        svg
+            width: 22px
+            height: 22px
+            fill: currentColor
+            object-fit: cover
+        &:focus
+            opacity: 0.7
+        &:active
+            opacity: 0.7
+        +desktop
+            &:hover
+                opacity: 0.7
+        
+
+.header-social__list
+    @media (max-width: 1278px)
+        margin-right: 20px
+    +mobile
+        margin-right: 0
+
+.breadcrumb .nav__link
+    padding-right: 23px
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        right: 0
+        display: inline-block
+        width: 10px
+        height: 8px
+        background-image: url('../../assets/img/sprite.svg#shape-down')
+        background-repeat: no-repeat
+        background-size: cover
+        transform: translateY(-50%)
+
+.nav__item:hover
+    +desktop
+        .nav__item-menu
+            overflow: visible
+            opacity: 1
+            height: auto
+            transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out
+            
+
+
+
+.burger
+    +burger
+    color: $white
+    @media (max-width: 1596px)
+        margin-right: 20px
+    +mobile
+        &__descr
+            display: none

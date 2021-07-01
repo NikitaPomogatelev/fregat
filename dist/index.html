@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фрегат Байкал</title>
+  <meta name="description" content="Фрегат, Байкал, Отдых на берегу Малого моря озера">
+  <link rel="stylesheet" href="./assets/css/normalize.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="./assets/css/vanillajs-datepicker.css" />
+  <link rel="stylesheet" href="./assets/css/choices.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+  <div class="site-container">
+    <header class="header">
+      <div class="container-fluid header__container">
+        <div class="header__left">
+          <div class="header__button">
+            <button type="button" class="burger" aria-label="Открыть меню"><span class="burger__line"></span></button>
+            <span class="burger__descr">Меню</span>
+          </div>
+          <nav class="nav header__nav header__nav--mobile">
+            <ul class="nav__list">
+              <li class="nav__item breadcrumb">
+                <a href="" class="nav__link">Номера и цены</a>
+                <div class="breadcrumb-menu nav__item-menu">
+                  <ul class="breadcrumb-menu__list">
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Эконом</a>
+                    </li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Стандарт</a></li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Люкс</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item breadcrumb">
+                <a href="#" class="nav__link">Услуги</a>
+                <div class="breadcrumb-menu nav__item-menu">
+                  <ul class="breadcrumb-menu__list">
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Сибирский чан</a>
+                    </li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Мангал на природе</a></li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Прокат велосипедов</a>
+                    </li>
+                    <li class="breadcrumb-menu__item"><a href="#" class="breadcrumb-menu__link">Ресторан Фрегат</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item breadcrumb">
+                <a href="#" class="nav__link">О базе отдыха</a>
+                <div class="breadcrumb-menu nav__item-menu">
+                  <ul class="breadcrumb-menu__list">
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Отдых для всей семьи</a>
+                    </li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Размещение</a></li>
+                    <li class="breadcrumb-menu__item">
+                      <a href="#" class="breadcrumb-menu__link">Большая территория</a>
+                    </li>
+                    <li class="breadcrumb-menu__item"><a href="#" class="breadcrumb-menu__link">Малое море (Байкал)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Отзывы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <a href="#" class="header__logo" aria-label="Логотип Фрегат">
+          <picture>
+            <source srcset="./assets/img/logo.webp 1x, ./assets/img/logo@2x.webp 2x, ./assets/img/logo@3x.webp 3x"
+              type="image/webp">
+            <img src="./assets/img/logo.jpg" alt="picture"
+              srcset="./assets/img/logo@2x.jpg 2x, ./assets/img/logo@3x.jpg 3x" />
+          </picture>
+        </a>
+
+        <div class="header__right">
+          <div class="header__phones">
+            <a href="tel:83952560026" class="header__phone">8 (3952) 56-00-26</a>
+            <a href="tel:83952560026" class="header__phone">8 (3952) 56-00-26</a>
+          </div>
+          <ul class="header-social__list social">
+            <li class="social__item header-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Viber">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item header-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Instagram">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item header-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Whatsapp">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <button type="button" class="header__btn btn-form">Заказать звонок</button>
+        </div>
+
+      </div>
+    </header>
+    <main>
+      <section class="hero swiper-container">
+
+        <div class="swiper-wrapper">
+
+          <section class="hero__slide swiper-slide" style="background-image: url('./assets/img/hero-bg-1.jpg');">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <div class="hero__left">
+                  <h1 class="hero__heading">
+                    <strong>Байкал</strong>
+                    <small>Отдых на берегу Малого моря озера</small>
+                  </h1>
+
+                </div>
+                <div class="hero__text-comment">
+                  <h3 class="text-comment__subtitle">Отзывы отдыхающих</h3>
+                  <q class="text-comment__quote">Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда все
+                    великолепно: радушный прием, отличное питание, уютное пребывание и&nbsp;блогоустроенный пляж. Хотим
+                    отметить вечерние освещение базы и&nbsp;особенно пляжа, которое помогает впитывать энергетику
+                    Байкала.</q>
+                  <cite class="text-comment__author">Cветлана Кулина</cite>
+                </div>
+              </div>
+              <button type="button" class="btn btn--accent hero__btn btn-form">Забронировать номер</button>
+            </div>
+          </section>
+          <section class="hero__slide swiper-slide" style="background-image: url('./assets/img/hero-bg-2.jpg');">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <div class="hero__left">
+                  <h2 class="hero__heading hero__heading--second">
+                    <strong>База отдыха Фрегат</strong>
+                    <small>Комфорт и безмятежность</small>
+                  </h2>
+
+                </div>
+                <div class="hero__text-comment">
+                  <h3 class="text-comment__subtitle">Отзывы отдыхающих</h3>
+                  <q class="text-comment__quote">Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда все
+                    великолепно: радушный прием, отличное питание, уютное пребывание и&nbsp;блогоустроенный пляж. Хотим
+                    отметить вечерние освещение базы и&nbsp;особенно пляжа, которое помогает впитывать энергетику
+                    Байкала.</q>
+                  <cite class="text-comment__author">Cветлана Кулина</cite>
+                </div>
+              </div>
+              <button type="button" class="btn btn--accent hero__btn btn-form">Забронировать номер</button>
+            </div>
+          </section>
+          <section class="hero__slide swiper-slide" style="background-image: url('./assets/img/hero-bg-3.jpg');">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <div class="hero__left">
+                  <h2 class="hero__heading hero__heading--second">
+                    <strong>Живописная бухта</strong>
+                    <small>Панорамный вид на остров Ольхон</small>
+                  </h2>
+
+                </div>
+                <div class="hero__text-comment">
+                  <h3 class="text-comment__subtitle">Отзывы отдыхающих</h3>
+                  <q class="text-comment__quote">Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда все
+                    великолепно: радушный прием, отличное питание, уютное пребывание и&nbsp;блогоустроенный пляж. Хотим
+                    отметить вечерние освещение базы и&nbsp;особенно пляжа, которое помогает впитывать энергетику
+                    Байкала.</q>
+                  <cite class="text-comment__author">Cветлана Кулина</cite>
+                </div>
+              </div>
+              <button type="button" class="btn btn--accent hero__btn btn-form">Забронировать номер</button>
+            </div>
+          </section>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="slider-button-prev hero-button-prev">
+           <span class="slider-button-arrow-prev"></span> 
+        </div>
+        <div class="slider-button-next hero-button-next">
+          <span class="slider-button-arrow-next"></span>
+        </div>
+
+
+        <div class="hero__features">
+          <div class="container-fluid hero__container-fluid">
+            <ul class="hero__features-list">
+              <li class="hero__features-item">
+                <a href="#" class="hero__features-link">
+                  <div class="hero__features-image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/hero-feature-sauna.webp 1x, ./assets/img/hero-feature-sauna@2x.webp 2x, ./assets/img/hero-feature-sauna@3x.webp 3x"> -->
+                      <img src="./assets/img/hero-feature-sauna.jpg" loading="lazy" alt="Сауна на берегу"
+                        srcset="./assets/img/hero-feature-sauna@2x.jpg 2x, ./assets/img/hero-feature-sauna@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="hero__features-text">
+                    <h3 class="hero__features-title">Сауна на берегу</h3>
+                    <span>Подробнее</span>
+                  </div>
+                </a>
+              </li>
+              <li class="hero__features-item">
+                <a href="#" class="hero__features-link">
+                  <div class="hero__features-image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/hero-feature-boat.webp 1x, ./assets/img/hero-feature-boat@2x.webp 2x, ./assets/img/hero-feature-boat@3x.webp 3x"> -->
+                      <img src="./assets/img/hero-feature-boat.jpg" loading="lazy" alt="Скоростной катер"
+                        srcset="./assets/img/hero-feature-boat@2x.jpg 2x, ./assets/img/hero-feature-boat@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="hero__features-text">
+                    <h3 class="hero__features-title">Скоростной катер</h3>
+                    <span>Подробнее</span>
+                  </div>
+                </a>
+              </li>
+              <li class="hero__features-item">
+                <a href="#" class="hero__features-link">
+                  <div class="hero__features-image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/hero-feature-rest.webp 1x, ./assets/img/hero-feature-rest@2x.webp 2x, ./assets/img/hero-feature-rest@3x.webp 3x"> -->
+                      <img src="./assets/img/hero-feature-rest.jpg" loading="lazy" alt="Ресторан с видом на Байкал"
+                        srcset="./assets/img/hero-feature-1@2x.jpg 2x, ./assets/img/hero-feature-1@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="hero__features-text">
+                    <h3 class="hero__features-title">Ресторан с видом на Байкал</h3>
+                    <span>Подробнее</span>
+                  </div>
+                </a>
+              </li>
+              <li class="hero__features-item">
+                <a href="#" class="hero__features-link">
+                  <div class="hero__features-image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/hero-feature-chan.webp 1x, ./assets/img/hero-feature-chan@2x.webp 2x, ./assets/img/hero-feature-chan@3x.webp 3x"> -->
+                      <img src="./assets/img/hero-feature-chan.jpg" loading="lazy" alt="Сибирский чан"
+                        srcset="./assets/img/hero-feature-chan@2x.jpg 2x, ./assets/img/hero-feature-chan@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="hero__features-text">
+                    <h3 class="hero__features-title">Сибирский чан</h3>
+                    <span>Подробнее</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container features__container">
+          <h2 class="title features__title">
+            <span class="features__title-number">6</span>
+            <span class="features__title-text"></span> Причин, почему для отдыха на Байкале нужно выбрать “Фрегат”
+          </h2>
+          <div class="features__list-inner">
+            <ul class="features__list">
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/features-1.jpg" loading="lazy" alt="Размещение"
+                        srcset="./assets/img/features-1@2x.jpg 2x, ./assets/img/features-1@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#user"></use>
+                      </svg>
+                      </div>
+                      <h3 class="features__subtitle">Размещение до 70 человек</h3>
+                    </div>
+                    <p class="features__descr">1&nbsp;гостиничный комплекс с&nbsp;номерами категории
+                      &laquo;Стандарт&raquo; , JUNIOR SUIT и&nbsp;&laquo;Люкс&raquo;, а&nbsp;так&nbsp;же
+                      4&nbsp;отдельных коттеджа.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/features-2.jpg" loading="lazy" alt="Отдых"
+                        srcset="./assets/img/features-2@2x.jpg 2x, ./assets/img/features-2@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#light"></use>
+                      </svg>
+                      </div>
+                      <h3 class="features__subtitle">Отдых для всей семьи</h3>
+                    </div>
+                    <p class="features__descr">Большая игровая зона, беседки с&nbsp;мангальной зоной, детская
+                      и&nbsp;спортивная площадка.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/features-3.jpg" loading="lazy" alt="Размещение"
+                        srcset="./assets/img/features-3@2x.jpg 2x, ./assets/img/features-3@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#compass"></use>
+                      </svg>
+                      </div>
+
+                      <h3 class="features__subtitle">Территория более 6 гектар</h3>
+                    </div>
+
+                    <p class="features__descr">Закрытая территория боле 6&nbsp;Га, cвоя береговая линия, два
+                      оборудованных пляжа, cпуск для водной техники, вертолетная площадка</p>
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/features-4.jpg" loading="lazy" alt="Размещение"
+                        srcset="./assets/img/features-4@2x.jpg 2x, ./assets/img/features-4@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#wave"></use>
+                      </svg>
+                      </div>
+                      <h3 class="features__subtitle">Малое море (Байкал)</h3>
+                    </div>
+
+                    <p class="features__descr">Здесь редко идет дождь и&nbsp;бывает пасмурно. Это одно из&nbsp;немногих
+                      мест на&nbsp;планете, где практический все дни в&nbsp;году- солнечные.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/features-5.webp 1x, ./assets/img/features-5@2x.webp 2x, ./assets/img/features-5@3x.webp 3x"> -->
+                      <img src="./assets/img/features-5.jpg" loading="lazy" alt="Размещение"
+                        srcset="./assets/img/features-5@2x.jpg 2x, ./assets/img/features-5@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#restaurant"></use>
+                      </svg>
+                      </div>
+                      <h3 class="features__subtitle">Ресторанный комплекс</h3>
+                    </div>
+
+                    <p class="features__descr">Ресторанный зал на&nbsp;100 посадочных мест с&nbsp;панорамным видом
+                      на&nbsp;Байкал, закрытая веранда.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="features__item">
+                <article>
+                  <div class="features__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/features-6.webp 1x, ./assets/img/features-6@2x.webp 2x, ./assets/img/features-6@3x.webp 3x"> -->
+                      <img src="./assets/img/features-6.jpg" loading="lazy" alt="Размещение"
+                        srcset="./assets/img/features-6@2x.jpg 2x, ./assets/img/features-6@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="features__text">
+                    <div class="features__text-top">
+                      <div class="features__icon">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#umbrella"></use>
+                      </svg>
+                      </div>
+                      <h3 class="features__subtitle">Комплекс услуг</h3>
+                    </div>
+
+                    <p class="features__descr">Наша база отдых предлагает множество услуг: сауна на&nbsp;берегу, банный
+                      чан, прокат велосипедов, конференц-зал до&nbsp;50&nbsp;человек и&nbsp;многое другое.</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="placing">
+        <div class="container placing__container">
+          <h2 class="title placing__title">Варианты размещения</h2>
+          <div class="placing__tabs">
+            <button class="btn btn--primary placing__btn placing__btn--active">Гостиничный корпус</button>
+            <button class="btn btn--primary placing__btn">Коттеджи (Отдельные дома)</button>
+          </div>
+
+          <div class="placing__content">
+            <div class="placing-slider swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card card--info placing__card">
+
+                    <div class="card__image">
+                      <div class="card__info">Топ продаж</div>
+                      <picture>
+                        <img src="./assets/img/placing-1.jpg" loading="lazy" alt="Номер Эконом"
+                          srcset="./assets/img/placing-1@2x.jpg 2x, ./assets/img/placing-1@3x.jpg 3x" />
+                      </picture>
+                    </div>
+                    <div class="card__text">
+                      <h3 class="card__subtitle">Номер 1-категории - “Эконом”</h3>
+                      <p class="card__descr">Двухместный однокомнатный номер с двумя односпальными кроватями (Можно
+                        сдвинуть /раздвинуть), две прикроватные ...</p>
+                      <div class="card-row placing-row">
+                        <div class="card-col">
+                          <ul class="card__list">
+                            <li class="card__item">Кондиционер</li>
+                            <li class="card__item">Душевая кабина</li>
+                            <li class="card__item">Телевизор</li>
+                          </ul>
+                        </div>
+                        <div class="card-col">
+                          <p class="card__info-item">Кол-во. номеров: <span>9</span></p>
+                          <p class="card__info-item">Цены за номер: от <span>3500р.</span></p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card-bottom">
+                      <button class="btn btn--primary card__btn">Подробнее</button>
+                      <p class="card__status">
+                        Свободные номера
+                        <span> <svg>
+                            <use xlink:href="assets/img/sprite.svg#checkmark"></use>
+                          </svg> в наличии</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card placing__card">
+
+                    <div class="card__image">
+                      <div class="card__info">Топ продаж</div>
+                      <picture>
+                        <img src="./assets/img/placing-2.jpg" loading="lazy" alt="Номер Люкс"
+                          srcset="./assets/img/placing-2@2x.jpg 2x, ./assets/img/placing-2@3x.jpg 3x" />
+                      </picture>
+                    </div>
+                    <div class="card__text">
+                      <h3 class="card__subtitle">Номер 1-категории - “Люкс”</h3>
+                      <p class="card__descr">Двухместный однокомнатный номер с двумя односпальными кроватями (Можно
+                        сдвинуть /раздвинуть), две прикроватные ...</p>
+                      <div class="card-row">
+                        <div class="card-col">
+                          <ul class="card__list">
+                            <li class="card__item">Кондиционер</li>
+                            <li class="card__item">Душевая кабина</li>
+                            <li class="card__item">Телевизор</li>
+                          </ul>
+                        </div>
+                        <div class="card-col">
+                          <p class="card__info-item">Кол-во. номеров: <span>9</span></p>
+                          <p class="card__info-item">Цены за номер: от <span>3500р.</span></p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card-bottom">
+                      <button class="btn btn--primary card__btn">Подробнее</button>
+                      <p class="card__status">
+                        Свободные номера
+                        <span> <svg>
+                            <use xlink:href="assets/img/sprite.svg#checkmark"></use>
+                          </svg> в наличии</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card card--info placing__card">
+
+                    <div class="card__image">
+                      <div class="card__info">Топ продаж</div>
+                      <picture>
+                        <img src="./assets/img/placing-3.jpg" loading="lazy" alt="Номер Стандарт"
+                          srcset="./assets/img/placing-3@2x.jpg 2x, ./assets/img/placing-3@3x.jpg 3x" />
+                      </picture>
+                    </div>
+                    <div class="card__text">
+                      <h3 class="card__subtitle">Номер 1-категории - “Стандарт”</h3>
+                      <p class="card__descr">Двухместный однокомнатный номер с двумя односпальными кроватями (Можно
+                        сдвинуть /раздвинуть), две прикроватные ...</p>
+                      <div class="card-row">
+                        <div class="card-col">
+                          <ul class="card__list">
+                            <li class="card__item">Кондиционер</li>
+                            <li class="card__item">Душевая кабина</li>
+                            <li class="card__item">Телевизор</li>
+                          </ul>
+                        </div>
+                        <div class="card-col">
+                          <p class="card__info-item">Кол-во. номеров: <span>9</span></p>
+                          <p class="card__info-item">Цены за номер: от <span>3500р.</span></p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card-bottom">
+                      <button class="btn btn--primary card__btn">Подробнее</button>
+                      <p class="card__status">
+                        Свободные номера
+                        <span> <svg>
+                            <use xlink:href="assets/img/sprite.svg#checkmark"></use>
+                          </svg> в наличии</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="slider-controls">
+              <div class="slider-pagination">
+                <span class="slider-pagination__current"></span>
+                <div class="swiper-pagination"></div>
+                <span class="slider-pagination__total"></span>
+              </div>
+              <div class="slider-navigate">
+                <div class="slider-button-prev placing-button-prev">
+                  <span class="slider-button-arrow-prev"></span> 
+               </div>
+               <div class="slider-button-next placing-button-next">
+                 <span class="slider-button-arrow-next"></span>
+               </div>
+              </div>
+            </div>
+            
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <h2 class="visually-hidden">Размещение, бронирование и оплата номера</h2>
+        <div class="container quiz__container">
+          <div class="quiz-steps">
+            <ul class="quiz-steps__list">
+              <li class="quiz-steps__item">
+                <span class="quiz-steps__number">1.</span>
+                <span class="quiz-steps__descr">Размещение</span>
+              </li>
+              <li class="quiz-steps__item quiz-steps__item--active">
+                <span class="quiz-steps__number">2.</span>
+                <span class="quiz-steps__descr">Бронирование</span>
+              </li>
+              <li class="quiz-steps__item">
+                <span class="quiz-steps__number">3.</span>
+                <span class="quiz-steps__descr">Оплата</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="quiz__content">
+            <div class="quiz__form-inner">
+              <form action="#" class="quiz__form">
+                <h3 class="quiz__subtitle">Забронировать номер</h3>
+                <div class="quiz-row">
+                  <div class="quiz__col">
+                    <div class="quiz__form-item quiz__range-date range-date" id="range-date">
+                      <div class="range-date__item range-date__start">
+                        <label class="quiz__form-label" for="start">Дата заезда</label>
+                        <div class="range-date__item-wrapper">
+                          <input autocomplete="off" type="text" name="start" placeholder="02-06-2021">
+                        </div>
+                      </div>
+                      <div class="range-date__item range-date__end">
+                        <label class="quiz__form-label" for="end">Дата отьезда</label>
+                        <div class="range-date__item-wrapper">
+                          <input autocomplete="off" type="text" name="end" placeholder="15-06-2021">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="quiz__form-item">
+                      <label for="type-of-house" class="quiz__form-label">
+                        Вид жилья</label>
+                      <select class="quiz-select" name="type-of-house" id="">
+                        <option value="hotel-1">Гостиничный корпус 1</option>
+                        <option value="hotel-2">Гостиничный корпус 2</option>
+                        <option value="hotel-3">Гостиничный корпус 3</option>
+                      </select>
+
+                    </div>
+                    <div class="quiz__form-item">
+                      <label for="type-of-house" class="quiz__form-label">
+                        Вид номера</label>
+                      <select class="quiz-select" name="type-of-house">
+                        <option value="econom">Номер 1-Категории “Эконом”</option>
+                        <option value="standart">Номер 1-Категории “Стандарт”</option>
+                        <option value="lux">Номер 1-Категории “Люкс”</option>
+                      </select>
+                    </div>
+                    <div class="quiz__form-item quiz__form-user">
+                      <label for="type-of-house" class="quiz__form-label">
+                        Количество человек</label>
+                      <input class="input quiz__form-input" type="number" placeholder="Введите количество отдыхающих">
+                    </div>
+
+                  </div>
+                  <div class="quiz__col">
+                    <div class="quiz__form-item">
+                      <label for="name" class="quiz__form-label">
+                        Имя</label>
+                      <input class="input quiz__form-input" type="text" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="quiz__form-item">
+                      <label for="tel" class="quiz__form-label">
+                        Телефон</label>
+                      <input class="input quiz__form-input" type="tel" placeholder="Введите ваш номер телефона">
+                    </div>
+                    <div class="quiz__form-item">
+                      <label for="comment" class="quiz__form-label">
+                        Комментарий</label>
+                      <textarea class="input quiz__form-message" name="comment"
+                        placeholder="Введите ваш комментарий"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+                <button class="btn btn--accent quiz__btn">Забронировать номер</button>
+
+              </form>
+
+            </div>
+            <div class="quiz__item">
+              <div class="card card--info quiz__card">
+
+                <div class="card__image">
+                  <div class="card__info">Топ продаж</div>
+                  <picture>
+                    <img src="./assets/img/placing-1.jpg" alt="Номер Эконом"
+                      srcset="./assets/img/placing-1@2x.jpg 2x, ./assets/img/placing-1@3x.jpg 3x" />
+                  </picture>
+                </div>
+                <div class="card__text">
+                  <h3 class="card__subtitle">Номер 1-категории - “Эконом”</h3>
+                  <p class="card__descr">Двухместный однокомнатный номер с двумя односпальными кроватями (Можно сдвинуть
+                    /раздвинуть), две прикроватные ...</p>
+                  <div class="card-row quiz__card-row">
+                    <div class="card-col">
+                      <ul class="card__list">
+                        <li class="card__item">Кондиционер</li>
+                        <li class="card__item">Душевая кабина</li>
+                        <li class="card__item">Телевизор</li>
+                      </ul>
+                    </div>
+                    <div class="card-col">
+                      <p class="card__info-item">Кол-во. номеров: <span>9</span></p>
+                      <p class="card__info-item">Цены за номер: от <span>3500р.</span></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="container service__container">
+          <h2 class="title service__title">Услуги и развлечения</h2>
+          <div class="service__list-inner">
+            <ul class="service__list">
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-1.webp 1x, ./assets/img/service-1@2x.webp 2x, ./assets/img/service-1@3x.webp 3x"> -->
+                      <img src="./assets/img/service-1.jpg" loading="lazy" alt="Сибирский чан"
+                        srcset="./assets/img/service-1@2x.jpg 2x, ./assets/img/service-1@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Сибирский чан</h3>
+                    <p class="service__descr">Новинка в&nbsp;мире парения! Эта процедура замешана на&nbsp;чудодейственной силе огня и&nbsp;чистейшей байкальской воды в&nbsp;сочетании с&nbsp;сибирскими травами и&nbsp;эфирными ...</p>
+                    <span class="service__cost">от 2000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-2.webp 1x, ./assets/img/service-2@2x.webp 2x, ./assets/img/service-2@3x.webp 3x"> -->
+                      <img src="./assets/img/service-2.jpg" loading="lazy" alt="Мангал на природе"
+                        srcset="./assets/img/service-2@2x.jpg 2x, ./assets/img/service-2@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Мангал на природе</h3>
+                    <p class="service__descr">Приготовьте шашлык и&nbsp;насладитесь вкусной едой на&nbsp;открытом воздухе. На&nbsp;территории нашей базы расположена отличная беседка с&nbsp;большим столом ...</p>
+                    <span class="service__cost">от 1000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-3.webp 1x, ./assets/img/service-3@2x.webp 2x, ./assets/img/service-3@3x.webp 3x"> -->
+                      <img src="./assets/img/service-3.jpg" loading="lazy" alt="Прокат велосипедов"
+                        srcset="./assets/img/service-3@2x.jpg 2x, ./assets/img/service-3@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Прокат велосипедов</h3>
+                    <p class="service__descr">Для семейного отдыха и&nbsp;приятного времяпрепровождения мы&nbsp;предоставляем прокат качественных прогулочных велосипедов ...</p>
+                    <span class="service__cost">от 500 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-4.webp 1x, ./assets/img/service-4@2x.webp 2x, ./assets/img/service-4@3x.webp 3x"> -->
+                      <img src="./assets/img/service-4.jpg" loading="lazy" alt="Сауна"
+                        srcset="./assets/img/service-4@2x.jpg 2x, ./assets/img/service-4@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Сауна</h3>
+                    <p class="service__descr">В&nbsp;любое время года и&nbsp;при любой погоде, что может быть лучше настоящей сауны? Наша сауна&nbsp;&mdash; настоящая находка для ценителей и&nbsp;любителей парной.</p>
+                    <span class="service__cost">от 4000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-5.webp 1x, ./assets/img/service-5@2x.webp 2x, ./assets/img/service-5@3x.webp 3x"> -->
+                      <img src="./assets/img/service-5.jpg" loading="lazy" alt="Рыбалка"
+                        srcset="./assets/img/service-5@2x.jpg 2x, ./assets/img/service-5@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Рыбалка</h3>
+                    <p class="service__descr">Традиционное русское увеселительное мероприятие, подарит огромное наслаждение и&nbsp;взрослым и&nbsp;детям! Рыбалка в&nbsp;районе мыса Мухор ...</p>
+                    <span class="service__cost">от 2000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-6.webp 1x, ./assets/img/service-6@2x.webp 2x, ./assets/img/service-6@3x.webp 3x"> -->
+                      <img src="./assets/img/service-6.jpg" loading="lazy" alt="Конференц-зал"
+                        srcset="./assets/img/service-6@2x.jpg 2x, ./assets/img/service-6@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Конференц-зал</h3>
+                    <p class="service__descr">Если вы&nbsp;хотите совместить отдых и&nbsp;плодотворную работу с&nbsp;коллегами, произвести положительное впечатление на&nbsp;партнеров ....</p>
+                    <span class="service__cost">от 1000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-7.webp 1x, ./assets/img/service-7@2x.webp 2x, ./assets/img/service-7@3x.webp 3x"> -->
+                      <img src="./assets/img/service-7.jpg" loading="lazy" alt="Ресторан “Фрегат”"
+                        srcset="./assets/img/service-7@2x.jpg 2x, ./assets/img/service-7@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Ресторан “Фрегат”</h3>
+                    <p class="service__descr">У&nbsp;гостей есть возможность оценить разнообразные блюда национальной русской кухни и&nbsp;выпить свежесваренного эспрессо или капучино.</p>
+                    <span class="service__cost">от 5000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+              <li class="service__item">
+                <article>
+                  <div class="service__image">
+                    <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/service-8.webp 1x, ./assets/img/service-8@2x.webp 2x, ./assets/img/service-8@3x.webp 3x"> -->
+                      <img src="./assets/img/service-8.jpg" loading="lazy" alt="Новый год 2022"
+                        srcset="./assets/img/service-8@2x.jpg 2x, ./assets/img/service-8@3x.jpg 3x" />
+                    </picture>
+                  </div>
+                  <div class="service__text">
+                    <h3 class="service__subtitle">Новый год 2022</h3>
+                    <p class="service__descr">Если вы&nbsp;хотите совместить отдых и&nbsp;плодотворную работу с&nbsp;коллегами, произвести положительное впечатление на&nbsp;партнеров ....</p>
+                    <span class="service__cost">от 5000 рублей в час</span>
+                    <a href="#" class="btn btn--primary service__btn">Подробнее</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container gallery__container">
+          <h2 class="title gallery__title">Фотографии местности и&nbsp;базы отдыха</h2>
+
+          <div class="gallery__grid">
+            <a data-fslightbox="gallery" href="./assets/img/gallery-1@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-1.jpg" loading="lazy" alt="Галерея фотографий 1"
+                  srcset="./assets/img/gallery-1@2x.jpg 2x, ./assets/img/gallery-1@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-2@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-2.jpg" loading="lazy" alt="Галерея фотографий 2"
+                  srcset="./assets/img/gallery-2@2x.jpg 2x, ./assets/img/gallery-2@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-3@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-3.jpg" loading="lazy" alt="Галерея фотографий 3"
+                  srcset="./assets/img/gallery-3@2x.jpg 2x, ./assets/img/gallery-3@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-4@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-4.jpg" loading="lazy" alt="Галерея фотографий 4"
+                  srcset="./assets/img/gallery-4@2x.jpg 2x, ./assets/img/gallery-4@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-5@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-5.jpg" loading="lazy" alt="Галерея фотографий 5"
+                  srcset="./assets/img/gallery-5@2x.jpg 2x, ./assets/img/gallery-5@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-6@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-6.jpg" loading="lazy" alt="Галерея фотографий 6"
+                  srcset="./assets/img/gallery-6@2x.jpg 2x, ./assets/img/gallery-6@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-7@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-7.jpg" loading="lazy" alt="Галерея фотографий 7"
+                  srcset="./assets/img/gallery-7@2x.jpg 2x, ./assets/img/gallery-7@3x.jpg 3x" />
+              </picture>
+            </a>
+            <a data-fslightbox="gallery" href="./assets/img/gallery-8@3x.jpg" class="gallery__image">
+              <picture>
+                <img src="./assets/img/gallery-8.jpg" loading="lazy" alt="Галерея фотографий 8"
+                  srcset="./assets/img/gallery-8@2x.jpg 2x, ./assets/img/gallery-8@3x.jpg 3x" />
+              </picture>
+            </a>
+          </div>
+          <button type="button" class="btn btn--primary gallery__btn">Посмотреть фотогалерею</button>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container feedback__container">
+          <h2 class="title feedback__title">Отзывы о базе отдыха “Фрегат”</h2>
+
+          <div class="feedback-slider swiper-container">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__text">
+                    <q>Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда всё великолепно: радушный приём, отличное питание, уютное пребывание и&nbsp;благоустроенный пляж. Рекомендую всем для семейного отдыха</q>
+                    <a href="#" class="feedback__link" aria-label="Перейти в Instagram">
+                      <svg>
+                        <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="#" class="feedback__auth-link">
+                    <div class="feedback__auth-image">
+                      <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/auth-1.jpg" loading="lazy" alt="Анастасия Ли"
+                      srcset="./assets/img/auth-1@2x.jpg 2x, ./assets/img/auth-1@3x.jpg 3x" />
+                      </picture>
+                    </div>
+                    <div class="feedback__auth-text">
+                        <h3 class="feedback__auth-name">Анастасия Ли</h3>
+                        <span class="feedback__auth-date">02.10.2021</span>
+                    </div>
+                  </a>
+
+                  <cite>
+                    
+                  </cite>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__text">
+                    <q>Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда всё великолепно: радушный приём, отличное питание, уютное пребывание и&nbsp;благоустроенный пляж. Рекомендую всем для семейного отдыха</q>
+                    <a href="#" class="feedback__link" aria-label="Перейти в Instagram">
+                      <svg>
+                        <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="#" class="feedback__auth-link">
+                    <div class="feedback__auth-image">
+                    </div>
+                    <div class="feedback__auth-text">
+                        <h3 class="feedback__auth-name">Артём Сазонов</h3>
+                        <span class="feedback__auth-date">02.10.2021</span>
+                    </div>
+                  </a>
+
+                  <cite>
+                    
+                  </cite>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__text">
+                    <q>Не&nbsp;в&nbsp;первый раз отдыхаем на&nbsp;этой базе. Как всегда всё великолепно: радушный приём, отличное питание, уютное пребывание и&nbsp;благоустроенный пляж. Рекомендую всем для семейного отдыха</q>
+                    <a href="#" class="feedback__link" aria-label="Перейти в Instagram">
+                      <svg>
+                        <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="#" class="feedback__auth-link">
+                    <div class="feedback__auth-image">
+                      <picture>
+                      <!-- <source type="image/webp" srcset="./assets/img/picture.webp 1x, ./assets/img/picture@2x.webp 2x, ./assets/img/picture@3x.webp 3x"> -->
+                      <img src="./assets/img/auth-3.jpg" loading="lazy" alt="Александр Ким"
+                      srcset="./assets/img/auth-3@2x.jpg 2x, ./assets/img/auth-3@3x.jpg 3x" />
+                      </picture>
+                    </div>
+                    <div class="feedback__auth-text">
+                        <h3 class="feedback__auth-name">Александр Ким</h3>
+                        <span class="feedback__auth-date">02.10.2021</span>
+                    </div>
+                  </a>
+
+                  <cite>
+                    
+                  </cite>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slider-controls">
+            <div class="slider-pagination">
+              <span class="slider-pagination__current"></span>
+              <div class="swiper-pagination"></div>
+              <span class="slider-pagination__total"></span>
+            </div>
+            <div class="slider-navigate">
+              <div class="slider-button-prev feedback-button-prev">
+                <span class="slider-button-arrow-prev"></span> 
+             </div>
+             <div class="slider-button-next feedback-button-next">
+               <span class="slider-button-arrow-next"></span>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cashback">
+        <div class="container cashback__container">
+          <h2 class="title cashback__title">Кешбэк по карте Мир</h2>
+          <div class="cashback__content">
+            <span class="cashback__number">20%</span>
+            <div class="cashback__image" style="background-image: url('../../assets/img/card-mir.png');">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container contacts__container">
+          <nav class="contacts__nav">
+            <a href="#" class="contacts__nav-link">Схема проезда</a>
+            <a href="#" class="contacts__nav-link">Карта базы</a>
+            <a href="#" class="contacts__nav-link">Карта офиса</a>
+          </nav>
+          <div class="contacts-content">
+            <div class="contacts__map">
+              <picture>
+              <!-- <source type="image/webp" srcset="./assets/img/map.webp 1x, ./assets/img/map@2x.webp 2x, ./assets/img/map@3x.webp 3x"> -->
+              <img src="./assets/img/map.jpg" alt="Карта"
+              srcset="./assets/img/map@2x.jpg 2x, ./assets/img/map@3x.jpg 3x" />
+              </picture>
+            </div>
+            <div class="contacts__text">
+              <h2 class="contacts__title">Наши конакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <h3 class="contacts__subtitle">Звоните по телефонам:</h3>
+                  <div class="contacts__item-phones">
+                    <a href="tel:+73952560026" class="contacts__link">+7 (3952) 56-00-26</a>
+                    <a href="tel:+73952952655" class="contacts__link">+7 (3952) 95-26-55</a>
+                    <a href="tel:+73952952655" class="contacts__link">+7 (3952) 95-26-55</a>
+                  </div>
+                 
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__subtitle">Электронная почта:</h3>
+                  <a href="mailto:952655@rambler" class="contacts__link">952655@rambler</a>
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__subtitle">Адрес офиса</h3>
+                  <span class="contacts__descr">г. Иркутск, ул. Волжская, 51а, 1 этаж</span>
+                </li>
+                <li class="contacts__item">
+                  <h3 class="contacts__subtitle">Адрес базы отдыха</h3>
+                  <span class="contacts__descr">Ольхонский район, Куркутский залив, мыс Бурлог</span>
+                </li>
+              </ul>
+              <div class="contacts__bottom">
+                <h2 class="contacts__question-title">Остались вопросы?</h2>
+                <div class="contacts__question-descr">
+                  <span class="contacts__question-write">Напишите нам в</span>
+                  <a href="#" class="social__link contacts-social__link" aria-label="Перейти в Whatsapp">
+                    <div class="contacts-social__link-icon contacts-social__link-icon--whatsapp">
+                      <svg>
+                        <use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+                      </svg>
+                    </div>
+                    <span>WhatsApp</span>
+                  </a>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left">
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Номера и цены</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Услуги и развлечения</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Памятка туриста</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Схема проезда</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Отзывы</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__nav-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="btn footer__btn btn-form">Получить консультацию</button>
+        <div class="footer__right">
+          <a href="tel:+73952560026" class="footer__phone">+7 (3952) 56-00-26</a>
+          <div class="footer__descr">Режим работы с 10:00 до 22:00</div>
+
+          <ul class="footer-social__list social">
+            <li class="social__item footer-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Viber">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item footer-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Instagram">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item footer-social__item">
+              <a href="#" class="social__link" aria-label="Перейти в Whatsapp">
+                <svg>
+                  <use xlink:href="./assets/img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay" id="modal">
+      <div class="modal">
+        <button class="modal-close" aria-label="Закрыть модальное окно"></button>
+        <div class="modal-content">
+          <h2 class="modal__title">Забронировать номер</h2>      
+          <form action="#" class="modal__form">
+            <input type="hidden" value="Заявка с сайта">
+          <label class="modal__label">
+            <span>Имя</span>
+            <input type="text" class="input modal__input" placeholder="Введите ваше имя">
+          </label>
+          <label class="modal__label">
+            <span>Телефон</span>
+            <input type="tel" class="input modal__input" placeholder="Введите ваш номер телефона">
+          </label>
+          <button class="btn btn--accent modal__btn">Забронировать номер</button>
+          <label class="custom-checkbox">
+            <input type="checkbox" class="modal-checkbox">
+            <span class="modal-checkbox__content">Я принимаю <a href="#" class="modal__link">условия передачи данных</a> </span>
+          </label>
+        </form>
+        </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
